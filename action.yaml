@@ -1,0 +1,16 @@
+name: Check file permission changes
+description: Fails if any file permissions (mode) were changed in the PR
+author: gi-org-pl
+
+inputs:
+  base-ref:
+    description: Base branch to compare against
+    required: false
+    default: main
+
+runs:
+  using: composite
+  steps:
+    - name: Check for file permission changes
+      shell: sh
+      run: ${{ github.action_path }}/check-permissions.sh ${{ inputs.base-ref }}
