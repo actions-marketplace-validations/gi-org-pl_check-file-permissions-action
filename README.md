@@ -43,6 +43,11 @@ jobs:
 
 The action uses `git diff --summary` to detect any `mode change` entries between the PR branch and the base branch. chmod-style changes like making a file executable (`644 → 755`) will fail the workflow.
 
+## Authors
+
+Action author is [Oskar Barcz](https://github.com/oskarbarcz), CTO of **[Generacja Innowacja](https://gi.org.pl)** —
+Poland's first technology-first NGO.
+
 ## License
 
 MIT
